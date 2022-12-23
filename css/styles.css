@@ -61,6 +61,24 @@ a:visited {
 .contacts {
   text-decoration: none;
 }
+.home-cover {
+  margin-top: 1px;
+  height: 80vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover-e {
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
 
 @media screen and (min-width: 600px) {
   /*  */
@@ -81,6 +99,7 @@ a:visited {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    transition: none;
   }
   .nav-link {
     margin: auto 20px;
