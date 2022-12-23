@@ -8,33 +8,45 @@
 }
 
 .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navContainer {
-  height: 40px;
   width: 100vw;
   background: orange;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: large;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: larger;
 }
 .navHeader {
-  width: 30vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-left: 10px;
+  justify-content: space-between;
 }
 .nav-link {
-  width: 20vw;
-  display: flex;
-  margin: 0px 10px;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out all;
 }
-.contact-link {
-  margin-left: auto;
-  margin-right: -5%;
+.companyInfo {
+  margin: auto;
+  border: 2px solid red;
+}
+.nav-btn {
+  width: 2rem;
+  background: orange;
+  margin-right: 1rem;
+}
+.nav-btn:hover {
+  background-color: blue;
+}
+.nav-btn:active {
+  background-color: green;
 }
 .companyName {
   text-decoration: none;
@@ -42,27 +54,41 @@
 a:visited {
   color: black;
 }
-.options {
-  height: 1.26rem;
-  display: none;
+.show-links {
+  height: 58px;
+}
+.contacts {
+  text-decoration: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
+  /*  */
   .navContainer {
-    background: red;
-    display: flex;
     flex-direction: row;
-    overflow: hidden;
-  }
-  .nav-link {
+    justify-content: center;
   }
   .navHeader {
-    margin-left: auto;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .options {
+    width: 30vw;
     display: flex;
-    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10px;
+  }
+  .nav-link {
+    height: 3rem;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 10px;
+    text-decoration: none;
+  }
+  .contact-link {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .fa-bars {
+    display: none;
   }
 }
