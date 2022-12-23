@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+.navbar {
+}
+.navContainer {
+  height: 40px;
+  width: 100vw;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.navHeader {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+.nav-link {
+  width: 20vw;
+  display: flex;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+.contact-link {
+  margin-left: auto;
+  margin-right: -5%;
+}
+.companyName {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+.options {
+  height: 1.26rem;
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .navContainer {
+    background: red;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .nav-link {
+  }
+  .navHeader {
+    margin-left: auto;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .options {
+    display: flex;
+    margin-right: auto;
+  }
+}
