@@ -71,23 +71,22 @@ a:visited {
   }
   .navHeader {
     width: 30vw;
-    border: 3px solid red;
   }
   .nav-btn {
     display: none;
   }
   .nav-links {
-    border: 3px solid blue;
     height: 3rem;
+    width: 100vw;
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
   }
   .nav-link {
-    display: flex;
-    justify-content: flex-end;
     margin: auto 20px;
   }
-  .contacts {
-    margin-left: 50rem;
+  .contact-link {
+    margin-left: auto;
+    margin-right: 2rem;
   }
 }
