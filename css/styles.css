@@ -24,18 +24,19 @@
   display: flex;
   justify-content: space-between;
 }
-.nav-link {
-  text-decoration: none;
+.nav-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 0px;
+  height: 0;
   overflow: hidden;
   transition: 0.3s ease-in-out all;
 }
+.nav-link {
+  text-decoration: none;
+}
 .companyInfo {
   margin: auto;
-  border: 2px solid red;
 }
 .nav-btn {
   width: 2rem;
@@ -55,7 +56,7 @@ a:visited {
   color: black;
 }
 .show-links {
-  height: 58px;
+  height: 87px;
 }
 .contacts {
   text-decoration: none;
@@ -64,31 +65,29 @@ a:visited {
 @media screen and (min-width: 500px) {
   /*  */
   .navContainer {
+    height: 3rem;
+    justify-content: flex-start;
     flex-direction: row;
-    justify-content: center;
   }
   .navHeader {
     width: 30vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: 10px;
+    border: 3px solid red;
   }
-  .nav-link {
+  .nav-btn {
+    display: none;
+  }
+  .nav-links {
+    border: 3px solid blue;
     height: 3rem;
-    width: 20vw;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: 0px 10px;
-    text-decoration: none;
   }
-  .contact-link {
-    margin-left: auto;
-    margin-right: 0;
+  .nav-link {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto 20px;
   }
-  .fa-bars {
-    display: none;
+  .contacts {
+    margin-left: 50rem;
   }
 }

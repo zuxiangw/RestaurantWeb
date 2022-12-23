@@ -1,4 +1,4 @@
-const links = document.querySelector(".nav-link");
+const links = document.querySelector(".nav-links");
 const navBtnDOM = document.querySelector(".nav-btn");
 
 navBtnDOM.addEventListener("click", () => {
