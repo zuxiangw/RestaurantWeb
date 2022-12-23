@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: "Kanit", sans-serif;
 }
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -22,7 +21,7 @@
 }
 .navHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .nav-links {
   display: flex;
@@ -36,7 +35,8 @@
   text-decoration: none;
 }
 .companyInfo {
-  margin: auto;
+  display: flex;
+  align-items: center;
 }
 .nav-btn {
   width: 2rem;
@@ -62,7 +62,7 @@ a:visited {
   text-decoration: none;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   /*  */
   .navContainer {
     height: 3rem;
