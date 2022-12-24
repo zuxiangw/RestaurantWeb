@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: "Kanit", sans-serif;
 }
+
+/* NavBar */
 .navbar {
   display: flex;
   justify-content: center;
@@ -61,24 +63,6 @@ a:visited {
 .contacts {
   text-decoration: none;
 }
-.home-cover {
-  margin-top: 1px;
-  height: 80vh;
-  width: 100vw;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("../images/cover.jpg");
-  background-size: cover;
-  background-position: center;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cover-e {
-  color: white;
-  text-align: center;
-  margin-top: auto;
-}
 
 @media screen and (min-width: 600px) {
   /*  */
@@ -109,3 +93,37 @@ a:visited {
     margin-right: 2rem;
   }
 }
+
+/* end of NavBar */
+
+/* Cover */
+.home-cover {
+  margin-top: 1px;
+  height: 80vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover-e {
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+/* end of cover */
+
+/* Hot Items */
+
+.h-itemsStarter {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* end of Hot Items */
