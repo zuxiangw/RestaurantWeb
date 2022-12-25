@@ -35,6 +35,7 @@
 }
 .nav-link {
   text-decoration: none;
+  border-top: 1px solid grey;
 }
 .companyInfo {
   display: flex;
@@ -64,8 +65,54 @@ a:visited {
   text-decoration: none;
 }
 
+/* Cover */
+.home-cover {
+  margin-top: 1px;
+  height: 80vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover-e {
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* hot items */
+.h-itemsStarter {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: orange;
+  margin: 5%;
+  border-radius: 50%;
+}
+
+.hItem-picture {
+  width: 40vw;
+  height: 30vh;
+  border-radius: 5%;
+}
+
+.h-item {
+  margin: auto 10px;
+  margin-bottom: 5vh;
+  text-align: center;
+  border: 3px solid orange;
+  border-radius: 5%;
+  padding: 3vh 3vw;
+}
+
 @media screen and (min-width: 600px) {
-  /*  */
+  /* NavBar */
   .navContainer {
     height: 3rem;
     justify-content: flex-start;
@@ -87,43 +134,32 @@ a:visited {
   }
   .nav-link {
     margin: auto 20px;
+    border-top: none;
   }
   .contact-link {
     margin-left: auto;
     margin-right: 2rem;
   }
+
+  /* Hot Items */
+
+  .hItem-picture {
+    width: 20vw;
+    height: 20vh;
+    border-radius: 5%;
+  }
+
+  .h-item-row {
+    display: flex;
+  }
+
+  .h-item {
+    border: 3px solid orange;
+    text-align: center;
+    justify-content: space-between;
+    width: 50vw;
+    padding: 1rem;
+  }
+
+  /* end of Hot Items */
 }
-
-/* end of NavBar */
-
-/* Cover */
-.home-cover {
-  margin-top: 1px;
-  height: 80vh;
-  width: 100vw;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("../images/cover.jpg");
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cover-e {
-  color: white;
-  text-align: center;
-  margin-top: auto;
-}
-/* end of cover */
-
-/* Hot Items */
-
-.h-itemsStarter {
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* end of Hot Items */
