@@ -35,7 +35,7 @@
 }
 .nav-link {
   text-decoration: none;
-  border-top: 1px solid grey;
+  border-bottom: 1.5px solid grey;
 }
 .companyInfo {
   display: flex;
@@ -44,7 +44,6 @@
 .nav-btn {
   width: 2rem;
   background: orange;
-  margin-right: 1rem;
 }
 .nav-btn:hover {
   background-color: blue;
@@ -98,7 +97,7 @@ a:visited {
 
 .hItem-picture {
   width: 40vw;
-  height: 30vh;
+  height: 25vh;
   border-radius: 5%;
 }
 
@@ -109,6 +108,26 @@ a:visited {
   border: 3px solid orange;
   border-radius: 5%;
   padding: 3vh 3vw;
+}
+
+.contact-bar {
+  background: #262626;
+  color: #f2f2f2;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header {
+  border-bottom: 3px solid white;
+  text-align: center;
+  margin: auto 25vw;
+}
+
+.contact-info {
+  text-align: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -134,7 +153,7 @@ a:visited {
   }
   .nav-link {
     margin: auto 20px;
-    border-top: none;
+    border-bottom: none;
   }
   .contact-link {
     margin-left: auto;
@@ -145,7 +164,7 @@ a:visited {
 
   .hItem-picture {
     width: 20vw;
-    height: 20vh;
+    height: 30vh;
     border-radius: 5%;
   }
 
@@ -162,4 +181,17 @@ a:visited {
   }
 
   /* end of Hot Items */
+  /* Contact Bar */
+
+  .contact-info {
+    margin-bottom: 15vh;
+    width: 95vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contact-header {
+    text-align: left;
+  }
 }
