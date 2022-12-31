@@ -117,6 +117,20 @@ a:visited {
 
 /* ******** About Page ******* */
 
+.about-cover {
+  margin-top: 1px;
+  height: 80vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("../images/about-hero.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-starter {
   margin: 1rem;
 }
@@ -137,6 +151,20 @@ a:visited {
 .about-starter-pic {
   width: 60vw;
   margin: 1rem;
+  border-radius: 5%;
+}
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.founder-img {
+  width: 50%;
+  height: 350px;
+  border-radius: 50px;
 }
 
 /* ******** Menu Page ******* */
@@ -235,6 +263,23 @@ a:visited {
 
   .about-starter-pic {
     width: 20vw;
+  }
+
+  /* founders */
+  .founder-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .founder {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .founder1 {
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
   }
 
   /* Contact Bar */
