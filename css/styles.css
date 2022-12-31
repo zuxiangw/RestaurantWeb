@@ -14,6 +14,7 @@
   align-items: center;
 }
 .navContainer {
+  height: 8vh;
   width: 100vw;
   background: orange;
   display: flex;
@@ -35,7 +36,6 @@
 }
 .nav-link {
   text-decoration: none;
-  border-bottom: 1.5px solid grey;
 }
 .companyInfo {
   display: flex;
@@ -54,6 +54,9 @@
 .companyName {
   text-decoration: none;
 }
+a {
+  color: black;
+}
 a:visited {
   color: black;
 }
@@ -63,6 +66,8 @@ a:visited {
 .contacts {
   text-decoration: none;
 }
+
+/* ******** Home Page ******* */
 
 /* Cover */
 .home-cover {
@@ -109,6 +114,34 @@ a:visited {
   border-radius: 5%;
   padding: 3vh 3vw;
 }
+
+/* ******** About Page ******* */
+
+.about-starter {
+  margin: 1rem;
+}
+
+.about-starter-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-starter-header {
+  line-height: 1.15em;
+  margin-bottom: 0.5em;
+}
+
+.about-starter-pic {
+  width: 60vw;
+  margin: 1rem;
+}
+
+/* ******** Menu Page ******* */
+
+/* ******** Contact Bar ******* */
 
 .contact-bar {
   background: #262626;
@@ -192,6 +225,22 @@ a:visited {
   }
 
   .contact-header {
-    text-align: left;
+    margin-right: auto;
+    margin-left: 5rem;
+    justify-content: flex-start;
+  }
+
+  /* About Page */
+
+  .about-starter-block {
+    flex-direction: row;
+  }
+
+  .about-starter-header {
+    margin-bottom: 3rem;
+  }
+
+  .about-starter-pic {
+    width: 20vw;
   }
 }
