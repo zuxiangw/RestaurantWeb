@@ -288,6 +288,8 @@ a:visited {
   margin-bottom: 2.5rem;
   text-align: center;
   line-height: 2rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .menu-btn {
@@ -317,6 +319,7 @@ a:visited {
 .menu-item img {
   width: 250px;
   height: 175px;
+  object-fit: cover;
 }
 
 .menu-item-price {
