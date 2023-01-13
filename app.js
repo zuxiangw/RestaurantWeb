@@ -4,6 +4,7 @@ const navBtnDOM = document.querySelector(".nav-btn");
 
 navBtnDOM.addEventListener("click", () => {
   links.classList.toggle("show-links");
+  navBtnDOM.classList.toggle("rotate90");
 });
 
 // faq
@@ -228,7 +229,7 @@ const menuItems = [
 const menuContainer = document.querySelector(".menu-items");
 const getAllItems = menuItems.map((item) => {
   return `<div class="menu-item">
-    <img src="${item.img}" alt="${item.name}"/>
+    <img src="${item.img}" alt="${item.name}" class="menu-pic"/>
     <header>
       <h4 class="menu-item-name">${item.name}</h4>
             <h4 class="menu-item-price">$${item.price}</h4>
@@ -248,6 +249,7 @@ optionBtns.forEach((btn) => {
   if (btn.id === "all") {
     btn.addEventListener("click", () => {
       menuContainer.innerHTML = getAllItems.join("");
+      document.querySelector(".menu-header-txt").innerHTML = "Our Menu";
     });
     return;
   }
@@ -258,7 +260,7 @@ optionBtns.forEach((btn) => {
   });
   const gatherFilteredItems = filteredItems.map((item) => {
     return `<div class="menu-item">
-    <img src="${item.img}" alt="${item.name}"/>
+    <img src="${item.img}" alt="${item.name}" class="menu-pic"/>
     <header>
       <h4 class="menu-item-name">${item.name}</h4>
             <h4 class="menu-item-price">$${item.price}</h4>
@@ -270,5 +272,6 @@ optionBtns.forEach((btn) => {
   });
   btn.addEventListener("click", () => {
     menuContainer.innerHTML = gatherFilteredItems.join("");
+    document.querySelector(".menu-header-txt").innerHTML = btn.innerHTML;
   });
 });
